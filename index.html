@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./Images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_circle"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="navbar">
+          <div class="homeOption">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="searchOption">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="yourLibrary">
+            <img
+              class="libraryImg"
+              src="./Images/library_icon.png"
+              alt="library icon"
+            />
+            <a href="#">Your Library</a>
+            <i class="fa-solid fa-plus plusSign"></i>
+          </div>
+          <div class="firstPlaylist">
+            <div class="createPlaylist">
+              <p>Create your first playlist</p>
+            </div>
+            <div class="help">
+              <p>It's easy, we'll help you</p>
+            </div>
+            <div class="createButton">
+              <div class="button" type="button">Create playlist</div>
+            </div>
+          </div>
+          <div class="podcasts">
+            <p class="findPodcasts">Let's find some podcasts to follow</p>
+            <p class="update">We'll keep you updated on new episodes</p>
+            <div class="browsePodcasts" type="button">Browse podcasts</div>
+          </div>
+        </div>
+      </div>
+      <div class="mainContent">
+        <div class="stickyNavBar">
+          <div class="leftArrow">
+            <img src="./Images/backward_icon.png" alt="Backward arrow" />
+          </div>
+          <div class="rightArrow">
+            <img src="./Images/forward_icon.png" alt="Forward Arrow" />
+          </div>
+          <div class="rightSide">
+            <div class="explorePremium">Explore Premium</div>
+            <div class="installApp">
+              <i class="fa-regular fa-circle-down"></i>
+              <p>Install App</p>
+            </div>
+            <div class="userIcon"><i class="fa-regular fa-user"></i></div>
+          </div>
+        </div>
+
+        <h2 class="recentlyPlayed">Recently Played</h2>
+        <div class="cardContainer">
+          <div class="card">
+            <img src="./Images/card1img.jpeg" alt="card1" />
+            <p class="cardTitle">Top 50 - Global</p>
+            <p class="cardInfo">
+              Your daily update of the most played tracks right...
+            </p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+        </div>
+
+        <h2 class="trendingNearYou">Trending now near you</h2>
+        <div class="cardContainer">
+          <div class="card">
+            <img src="./Images/card2img.jpeg" alt="card1" />
+            <p class="cardTitle">Mahiye Jinna Sohna</p>
+            <p class="cardInfo">Darshan Raval</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="card">
+            <img src="./Images/card3img.jpeg" alt="card1" />
+            <p class="cardTitle">Mere Pass Tum Ho</p>
+            <p class="cardInfo">Silent Ocean, Lofi Music.</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="card">
+            <img src="./Images/card4img.jpeg" alt="card1" />
+            <p class="cardTitle">Naa Ready(From "L...)</p>
+            <p class="cardInfo">
+              Aniruddh Ravichander, Thalapathy Vijay, Asal...
+            </p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="card">
+            <img src="./Images/Sanam teri kasam.jpeg" alt="card1" />
+            <p class="cardTitle">Sanam Teri Kasam</p>
+            <p class="cardInfo">
+              Aniruddh Ravichander, Thalapathy Vijay, Asal...
+            </p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="card">
+            <img src="./Images/Shej aarti.jpg" alt="card1" />
+            <p class="cardTitle">Sai Baba Shej Aarti</p>
+            <p class="cardInfo">Swapnil Bandodkar</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="card">
+            <img src="./Images/Dhoop aartt.jpg" alt="card1" />
+            <p class="cardTitle">Sai Baba Dhoop Aarti</p>
+            <p class="cardInfo">Swapnil Bandodkar</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="card">
+            <img src="./Images/Kakad Aartit.jpeg" alt="card1" />
+            <p class="cardTitle">Sai Baba Kakad Aarti</p>
+            <p class="cardInfo">Shri Pramod Medhi</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="card">
+            <img src="./Images/Madhyan aartit.jpeg" alt="card1" />
+            <p class="cardTitle">Sai Baba Madhyan Aarti</p>
+            <p class="cardInfo">Swapnil Bandodkar</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+        </div>
+
+        <h2 class="featuredCharts">Featured Charts</h2>
+        <div class="cardContainer">
+          <div class="card">
+            <img src="./Images/card5img.jpeg" alt="card1" />
+            <p class="cardTitle">Top Songs - Global</p>
+            <p class="cardInfo">Weekly music charts from over the globe</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="card">
+            <img src="./Images/card6img.jpeg" alt="card1" />
+            <p class="cardTitle">Top Songs - India</p>
+            <p class="cardInfo">Weekly music charts of the best Indian beats</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="card">
+            <img src="./Images/card1img.jpeg" alt="card1" />
+            <p class="cardTitle">Top 50 - Global</p>
+            <p class="cardInfo">
+              Your daily update of the most played tracks right...
+            </p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+        </div>
+
+        <h2 class="popularArtists">Popular Artists</h2>
+
+        <div class="artistsContainer">
+          <div class="artistCard">
+            <div class="image shreyaGhoshal"></div>
+            <p class="name">Shreya Ghoshal</p>
+            <p class="artist">Artist</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="artistCard">
+            <div class="image arijitSingh"></div>
+            <p class="name">Arijit Singh</p>
+            <p class="artist">Artist</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="artistCard">
+            <div class="image ajayGogavale"></div>
+            <p class="name">Ajay Gogavale</p>
+            <p class="artist">Artist</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="artistCard">
+            <div class="image sonuNigam"></div>
+            <p class="name">Sonu Nigam</p>
+            <p class="artist">Artist</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="artistCard">
+            <div class="image pritam"></div>
+            <p class="name">Pritam</p>
+            <p class="artist">Artist</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="artistCard">
+            <div class="image sachinJigar"></div>
+            <p class="name">Sachin-Jigar</p>
+            <p class="artist">Artist</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+
+          <div class="artistCard">
+            <div class="image arRahman"></div>
+            <p class="name">A.R.Rahman</p>
+            <p class="artist">Artist</p>
+            <div class="playButton"><i class="fa-solid fa-play"></i></div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="musicPlayer">
+        <div class="leftPart">
+          <div class="thumbnail"></div>
+          <div class="text">
+            <p class="songName">Shirdi Sai Baba Shej Aarti</p>
+            <p class="artistName">Swapnil Bandodkar</p>
+          </div>
+
+          <div class="plusIcon">
+            <span class="material-symbols-outlined"> add_circle </span>
+          </div>
+        </div>
+        <div class="middlePart">
+          <div class="playerControls">
+            <img
+              class="playerIcons otherIcons firstIcon"
+              src="./Images/player_icon1.png"
+              alt="shuffle"
+            />
+            <img
+              class="playerIcons otherIcons"
+              src="./Images/player_icon2.png"
+              alt="leftArrow"
+            />
+            <img
+              class="playerIcons playPauseButton"
+              src="./Images/player_icon3.png"
+              alt="rightArrow"
+            />
+            <img
+              class="playerIcons otherIcons"
+              src="./Images/player_icon4.png"
+              alt="rightArrow"
+            />
+            <img
+              class="playerIcons otherIcons"
+              src="./Images/player_icon5.png"
+              alt="repeat"
+            />
+          </div>
+          <div class="playBackBar">
+            <span class="initialTime">0:00</span>
+            <input
+              class="bar"
+              type="range"
+              name="bar"
+              id="bar"
+              min="0"
+              max="1000"
+              step="1"
+            />
+            <span class="FinalTime">11:11</span>
+          </div>
+        </div>
+        <div class="rightPart">
+          <img
+            class="nowPlaying rightSideIcons"
+            src="./Images/Noy playing.png"
+            alt="Now playing"
+          />
+          <i class="fa-solid fa-music lyrics rightSideIcons"></i>
+          <img
+            class="queue rightSideIcons"
+            src="./Images/Music Queue.png"
+            alt="musicQueue"
+          />
+          <i class="fa-solid fa-computer connectToDevices rightSideIcons"></i>
+          <img
+            class="volume rightSideIcons"
+            src="./Images/volume.png"
+            alt="Volume"
+          />
+          <input type="range" class="vol" name="" id="">
+          <i
+            class="fa-solid fa-up-right-and-down-left-from-center fullScreen fullScreen rightSideIcons"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

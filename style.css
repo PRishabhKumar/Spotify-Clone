@@ -1,0 +1,708 @@
+* {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 600px;
+  font-style: normal;
+  color: white;
+  margin: 0px;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  overflow: hidden;
+}
+
+.logo {
+  margin-left: 40px;
+  height: 55px;
+  width: 55px;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sidebar {
+  margin: 10px;
+  width: 400px;
+  background-color: yellow;
+  border-radius: 1rem; /* 1 rem = 16 px*/
+  background-color: black;
+}
+
+.mainContent {
+  padding-left: 30px;
+  background-color: red;
+  flex: 1;
+  height: calc(100vh - 115px);
+  border-radius: 1rem;
+  overflow: auto;
+  background-color: #121212;
+}
+
+.musicPlayer {
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  height: 120px;
+  background-color: black;
+  display: flex;
+}
+
+.navbar {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  border-radius: 1rem;
+  color: white;
+  background-color: #121212;
+  height: 150px;
+  width: 380px;
+  padding: 0.5rem, 0.75rem;
+}
+
+a {
+  padding: 30px;
+  text-decoration: none;
+}
+
+.homeOption,
+.searchOption {
+  line-height: 2.5rem;
+  opacity: 0.5;
+  padding: 20px;
+}
+
+.homeOption:hover,
+.searchOption:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.navbar a {
+  font-size: 1.5rem;
+}
+
+.navbar i {
+  font-size: 1.5rem;
+}
+
+.library {
+  width: 400px;
+  height: calc(100vh - 150px - 150px);
+  border-radius: 1rem;
+  margin-top: 10px;
+  background-color: #121212;
+}
+
+.libraryImg {
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 30px;
+  width: 30px;
+  opacity: 0.5;
+}
+
+.yourLibrary {
+  font-size: 30px;
+  display: flex;
+}
+
+.yourLibrary a {
+  margin-left: 1px;
+  opacity: 0.5;
+  margin-right: 50px;
+}
+
+.yourLibrary img {
+  margin-left: 20px;
+  /* font-size: 25px; */
+  height: 1.75rem;
+  width: 1.75rem;
+  opacity: 0.5;
+}
+
+.yourLibrary:hover a,
+.yourLibrary:hover img {
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.plusSign {
+  margin-top: 35px;
+  right: 0px;
+  opacity: 0.5;
+}
+
+.plusSign:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: opacity 0.3s ease-in-out;
+}
+
+.firstPlaylist {
+  margin-top: 20px;
+  border-radius: 1rem;
+  background-color: #232323;
+  width: 380px;
+  height: 300px;
+  margin-left: 10px;
+}
+
+.podcasts {
+  margin-top: 30px;
+  border-radius: 1rem;
+  background-color: #232323;
+  width: 380px;
+  height: 300px;
+  margin-left: 10px;
+}
+
+.createPlaylist,
+.help {
+  line-height: 2.5rem;
+}
+
+.createPlaylist {
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.createPlaylist p,
+.help p {
+  margin-left: 20px;
+}
+
+.help {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.button {
+  font-weight: bold;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  margin-left: 30px;
+  width: 250px;
+  height: 60px;
+  background-color: white;
+  color: black;
+}
+
+.podcasts p {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.findPodcasts {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.update {
+  font-size: 20px;
+}
+
+.browsePodcasts {
+  margin-top: 50px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  width: 250px;
+  height: 60px;
+}
+
+.button:hover,
+.browsePodcasts:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.stickyNavBar {
+  margin-top: 10px;
+  position: sticky;
+  display: flex;
+  height: 90px;
+  background-color: #121212;
+  z-index: 10; /*This is to ensure that the text and the content of the cards dont fo inside the sticky navbar when the screen is scrolled*/
+}
+
+.leftArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background-color: #121212;
+  height: 50px;
+  width: 50px;
+  color: black;
+}
+
+.rightArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  color: black;
+}
+
+.rightArrow:hover,
+.leftArrow:hover {
+  cursor: pointer;
+}
+
+.leftArrow img {
+  height: 40px;
+  width: 40px;
+}
+
+.rightArrow img {
+  height: 40px;
+  width: 40px;
+}
+
+.rightSide {
+  padding-left: 15px;
+  margin-left: 1000px;
+  display: flex;
+}
+
+.explorePremium {
+  padding: 0px, 20px, 0px, 10px;
+  border-radius: 100px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.75rem;
+  width: 15.625rem;
+  background-color: white;
+  color: black;
+  margin-right: 20px;
+}
+
+.explorePremium:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.installApp {
+  padding: 0px, 20px, 0px, 10px;
+  border-radius: 100px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.75rem;
+  width: 15.625rem;
+  background-color: black;
+  color: white;
+  margin-right: 20px;
+}
+
+.installApp i {
+  margin-left: 10px;
+  font-size: large;
+  color: white;
+}
+
+.installApp p {
+  margin-left: 20px;
+}
+
+.installApp:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.userIcon {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 20px; /* Added to shift it left */
+}
+
+.userIcon i {
+  font-size: 35px;
+}
+
+.userIcon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardContainer {
+  margin-left: 20px;
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 1rem;
+  width: 250px;
+  /* background-color: #232323; */
+  border-radius: 20px;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card:hover {
+  background-color: #232323;
+  transition: background-color 0.3s ease-in-out;
+  .playButton {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+.card img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: large;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cardInfo {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.cardsArea {
+  background-color: yellow;
+}
+
+.recentlyPlayed,
+.trendingNearYou,
+.featuredCharts,
+.popularArtists {
+  font-size: 40px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.playButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: green;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.playButton i {
+  color: black;
+}
+
+.playButton:hover {
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.line {
+  width: 95%;
+  height: 30%;
+  border-top: 2px solid white;
+  opacity: 0.5;
+}
+
+.artistsContainer {
+  margin-left: 20px;
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.image {
+  background-color: green;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  background-image: url("./Images/Shreya Ghoshal.jpeg");
+  background-size: cover; /* makes the image to cover the whole div */
+  background-position: center center; /* places the image in the center */
+  background-repeat: no-repeat; /* makes sure that the image dosent repeat over and over again */
+}
+
+.name {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.artist {
+  margin-top: 0.5rem;
+  opacity: 0.7;
+  font-size: 1.25rem;
+}
+
+.artistCard {
+  padding: 1rem;
+  border-radius: 1.25rem;
+  margin-right: 2.5rem;
+}
+
+.artistCard:hover {
+  background-color: #232323;
+  transition: background-color 0.3s ease-in-out;
+  .playButton {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+.shreyaGhoshal {
+  background-image: url("./Images/Shreya Ghoshal.jpeg");
+}
+
+.arijitSingh {
+  background-image: url("./Images/Arijit\ Singh.jpg");
+}
+
+.ajayGogavale {
+  background-image: url("./Images/Ajay\ Gogavale.jpg");
+}
+
+.sonuNigam {
+  background-image: url("./Images/sonu\ nigam.jpeg");
+}
+
+.pritam {
+  background-image: url("./Images/pritam.jpeg");
+}
+
+.sachinJigar {
+  background-image: url("./Images/sachin\ jigar.jpeg");
+}
+
+.arRahman {
+  background-image: url("./Images/ar\ rahman.jpeg");
+}
+
+.leftPart {
+  height: 100%;
+  width: 25%;
+  display: flex;
+}
+
+.thumbnail {
+  margin-top: 10px;
+  margin-left: 30px;
+  height: 100px;
+  width: 100px;
+  background-image: url("./Images/Shej\ aarti.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+}
+
+.text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.songName {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.artistName {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.plusIcon {
+  font-weight: 600;
+  margin-left: 40px;
+  margin-top: 40px;
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.plusIcon:hover {
+  transform: scale(1.3);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.middlePart {
+  height: 100%;
+
+  width: 50%;
+}
+
+.rightPart {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.playerControls {
+  margin-bottom: 0px;
+  height: 80%;
+}
+
+.playerIcons {
+  margin-top: 20px;
+  padding-left: 1rem;
+  height: 1.75rem;
+  opacity: 0.7;
+}
+
+.playerIcons:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.firstIcon {
+  margin-left: 430px;
+}
+
+.playPauseButton {
+  margin-right: 10px;
+  transform: scale(1.5);
+}
+
+.playPauseButton:hover {
+  transform: scale(1.55);
+  transition: transform 0.1s ease-in-out;
+}
+
+.otherIcons {
+  transform: scale(0.7);
+}
+
+.otherIcons:hover {
+  transform: scale(0.8);
+  transition: transform 0.1s ease-in-out;
+}
+
+.playBackBar {
+  margin-top: -30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto; /* Center the entire bar */
+}
+
+.bar {
+  border-radius: 100px;
+  width: 80%;
+  appearance: none;
+  outline: none;
+  background: transparent; /* Important to remove default styling */
+}
+
+/* Track */
+.bar::-webkit-slider-runnable-track {
+  background-color: #ddd;
+  height: 0.2rem;
+  border-radius: 100px;
+}
+
+/* Thumb */
+.bar::-webkit-slider-thumb {
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #1bd760;
+  position: relative;
+  margin-top: -0.4rem; /* Centers the thumb properly */
+}
+
+.bar:hover {
+  cursor: pointer;
+}
+
+/* Styling for the right side of the music player starts here */
+
+.nowPlaying,
+.queue,
+.volume {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.nowPlaying {
+  margin-left: 70px;
+}
+
+.rightSideIcons {
+  opacity: 0.8;
+  margin-right: 30px;
+}
+
+.rightSideIcons:hover {
+  transform: scale(1.2);
+  transition: transform 0.1s ease-in-out;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.vol {
+  margin-left: 5px;
+  margin-right: 20px; /* Reduced from 50px to 20px */
+}
+
+.fullScreen {
+  margin-right: 5px; /* Reduced from 10px to 5px */
+}
